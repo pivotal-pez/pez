@@ -101,10 +101,11 @@ lease
 ### Inventory Admin APIs
 ```
 GET    /admin/products                    # return all products
-GET    /admin/products/id                 # return product details
-POST   /admin/products                    # create new product record
-PUT    /admin/products/:id                # update product
-DELETE /admin/products/:id                # delete product
+GET    /admin/product/:id                 # return product details
+POST   /admin/product                    # create new product record
+POST   /lease/product/:id                 # create new lease on a given product
+PUT    /admin/product/:id                # update product
+DELETE /admin/product/:id                # delete product
 ```
 
 ### Portal Routes
