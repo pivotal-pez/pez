@@ -103,7 +103,7 @@ lease
 GET    /admin/products                    # return all products
 GET    /admin/product/:id                 # return product details
 POST   /admin/product                    # create new product record
-POST   /lease/product/:id                 # create new lease on a given product
+POST   /lease/product/:sku                 # create new lease object with given information
 PUT    /admin/product/:id                # update product
 DELETE /admin/product/:id                # delete product
 ```
