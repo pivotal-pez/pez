@@ -108,6 +108,13 @@ PUT    /admin/product/:id                # update product
 DELETE /admin/product/:id                # delete product
 ```
 
+### Dispenser Routes
+```
+POST   /lease                           # post a lease object to dispenser and recieve a decorated lease response (decorated meaning it should have some creds or info in there)
+DELETE /lease                           # delete the given lease object (decomission a given item, tear down, restock)
+
+```
+
 ### Portal Routes
 ```
 GET   /products                           # return list of product SKUs
