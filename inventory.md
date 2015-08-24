@@ -55,18 +55,34 @@ inventory
  lease-guid:917397-292735-98293752935
 }
 
+// for current real lease object structure go here: https://github.com/pivotal-pez/pezdispenser/blob/develop/service/type.go
 lease
 {
-  guid: 917397-292735-98293752935,
-  inventory_guid: guid: kaasd9sd9-98239h23h9-99h3ba993ba9h3ab,
-  user: dnem,
-  lease_duration: 14 #days
-  lease_end_date: 92986228624 #epoch
-  lease_start_date: 73682725283 #epoch
-  credentials: {
-
-  }
-  status: expired #[active|expired|rejected|pending]
+   "_id":"leaseguid",
+   "inventory_id":"_id of specific inventory item",
+   "username":"joe@user.net",
+   "sku":"2c.small",
+   "lease_duration":14,
+   "lease_end_date":"2000-01-10",
+   "lease_start_date":"2000-01-10",
+   "consumer_meta":{
+      // this should be decorated content added by the dispenser ex.
+		    "foundation_username":"admin",
+      "foundation_password":"supersecre",
+      "foundation_url":"www.gohere.com"      ...
+   },
+   "procurement_meta":{
+      // this is the details required to take procurement actions
+		    "template_name":"PCFaaS-Slot-10",
+      "vcd_username":"vcdUser",
+      "vcd_password":"p@55w3rd",
+      "vapp_id":"302172350236723602367"
+   },
+   "task: {
+   		 // this should be decorated content added by the dispenser, but structured Task data
+   		 "_id":"mytaskguid",
+      "status":"unavailable"   ...
+   }
 }
 
 ```
