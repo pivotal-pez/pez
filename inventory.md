@@ -40,7 +40,7 @@
 inventory
 {
  sku: 2C.small,
- guid: kaasd9sd9-98239h23h9-99h3ba993ba9h3ab,
+ _id: kaasd9sd9-98239h23h9-99h3ba993ba9h3ab,
  tier: 2,
  type: C,
  size: small,
