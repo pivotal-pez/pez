@@ -17,7 +17,7 @@
   * A OpenStack 
   * B vSphere
   * C vCloud
-  * D Raw
+  * D Raw Hardware
   * E Orchestration Layer
 
 ## Offerings
@@ -33,7 +33,7 @@
 
 * (4) MaaS - I get my own bare metal set of servers to do whatever i want with
   * (4D) Raw metal - i get some servers
-  * (4E) Raw metal + JuJu - i get some servers targeted by the juju console to configure however i want
+  * (4E) Raw metal + Josh's Python - I get some servers with OSes installed
 
 ## possible inventory object structure
 ```
