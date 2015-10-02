@@ -58,22 +58,16 @@ inventory
 // for current real lease object structure go here: https://github.com/pivotal-pez/pezdispenser/blob/develop/service/type.go
 lease
 {
-   "_id":"leaseguid",
-   "inventory_id":"_id of specific inventory item",
+   "lease_id":"507f1f77bcf86cd799439011",
+   "inventory_id":"507f1f77bcf86cd799439012",
    "username":"joe@user.net",
    "sku":"2c.small",
-   "lease_duration":14,
-   "lease_end_date":"2000-01-10",
-   "lease_start_date":"2000-01-10",
-   "consumer_meta":{
-      // this should be decorated content added by the dispenser ex.
-		    "foundation_username":"admin",
-      "foundation_password":"supersecre",
-      "foundation_url":"www.gohere.com"      ...
-   },
+   "lease_duration":20,
+   "lease_end_date":1445444091104630742,
+   "lease_start_date":1443716162823973542,
    "procurement_meta":{
       // this is the details required to take procurement actions
-		    "template_name":"PCFaaS-Slot-10",
+      "template_name":"PCFaaS-Slot-10",
       "vcd_username":"vcdUser",
       "vcd_password":"p@55w3rd",
       "vapp_id":"302172350236723602367"
