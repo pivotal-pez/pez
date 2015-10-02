@@ -1,8 +1,35 @@
 ## POST /v1/lease
-Headers:
 
+**Headers:**
 
+//found on www.pezapp.io
 
+X-API-KEY = xxx2d4e9-xxxx-xxxx-xxxx-72e348984xxx
+
+**Request Body:**
+
+```
+{
+   "lease_id":"507f1f77bcf86cd799439011",
+   "inventory_id":"507f1f77bcf86cd799439012",
+   "username":"joe@user.net",
+   "sku":"2c.small",
+   "lease_duration":20,
+   "lease_end_date":1445444091104630742,
+   "lease_start_date":1443716162823973542,
+   "procurement_meta":{
+      "template_name":"PCFaaS-Slot-10",
+      "vcd_username":"vcdUser",
+      "vcd_password":"p@55w3rd",
+      "base_uri":"vcd.my.fake.cloud.com"
+   }
+}
+```
+
+**Success Response StatusCode:**
+201
+
+**Response Body:**
 
 ```
 {
@@ -30,7 +57,7 @@ Headers:
     "Profile": "longpoll_queue",
     "CallerName": "2c.small",
     "MetaData": {
-      "creds": {
+      "credentials": {
         "app_manager": {
           "cf_cli": {
             "pass": "pivotal",
