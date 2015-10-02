@@ -40,15 +40,12 @@ X-API-KEY = xxx2d4e9-xxxx-xxxx-xxxx-72e348984xxx
   "lease_duration": 20,
   "lease_end_date": 1445444091104630742,
   "lease_start_date": 1443716162823973542,
-  "procurement_meta": {
-    "inventory_id": "507f1f77bcf86cd799439012",
-    "lease_expires": 1445444091104630742,
-    "task_action": "self_destruct",
-    "template_name": "PCFaaS-Slot-10",
-    "vapp_id": "302172350236723602367",
-    "vcd_password": "p@55w3rd",
-    "vcd_username": "vcdUser"
-  },
+  "procurement_meta":{
+      "template_name":"PCFaaS-Slot-10",
+      "vcd_username":"vcdUser",
+      "vcd_password":"p@55w3rd",
+      "base_uri":"vcd.my.fake.cloud.com"
+   },
   "task": {
     "ID": "560ede8bfccecc0072000001",
     "Timestamp": 1443815051336165844,
