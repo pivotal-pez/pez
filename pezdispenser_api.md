@@ -18,9 +18,9 @@ X-API-KEY = xxx2d4e9-xxxx-xxxx-xxxx-72e348984xxx
    "lease_end_date":1445444091104630742,
    "lease_start_date":1443716162823973542,
    "procurement_meta":{
-      "template_name":"PCFaaS-Slot-10",
-      "vcd_username":"vcdUser",
-      "vcd_password":"p@55w3rd",
+      "template_name":"PCFaaS-Slot-xxxxx",
+      "vcd_username":"xxxxx",
+      "vcd_password":"xxxxx",
       "base_uri":"vcd.my.fake.cloud.com"
    }
 }
@@ -41,9 +41,9 @@ X-API-KEY = xxx2d4e9-xxxx-xxxx-xxxx-72e348984xxx
   "lease_end_date": 1445444091104630742,
   "lease_start_date": 1443716162823973542,
   "procurement_meta":{
-      "template_name":"PCFaaS-Slot-10",
-      "vcd_username":"vcdUser",
-      "vcd_password":"p@55w3rd",
+      "template_name":"PCFaaS-Slot-xxxxx",
+      "vcd_username":"xxxxx",
+      "vcd_password":"xxxxx",
       "base_uri":"vcd.my.fake.cloud.com"
    },
   "task": {
@@ -57,25 +57,25 @@ X-API-KEY = xxx2d4e9-xxxx-xxxx-xxxx-72e348984xxx
       "credentials": {
         "app_manager": {
           "cf_cli": {
-            "pass": "pivotal",
-            "url": "api.pcfaas-slot10.pez.pivotal.io",
-            "user": "admin"
+            "pass": "xxxxx",
+            "url": "api.pcfaas-xxxxx.pez.pivotal.io",
+            "user": "xxxxx"
           },
           "console_ui": {
-            "pass": "pivotal",
-            "url": "https://opsmgr.pcfaas-slot10.pez.pivotal.io:443",
-            "user": "admin"
+            "pass": "xxxxx",
+            "url": "https://opsmgr.pcfaas-xxxxx.pez.pivotal.io:443",
+            "user": "xxxxx"
           }
         },
         "ops_manager": {
           "admin_ui": {
-            "pass": "pivotal",
-            "url": "https://opsmgr.pcfaas-slot10.pez.pivotal.io:8443",
-            "user": "admin"
+            "pass": "xxxxx",
+            "url": "https://opsmgr.pcfaas-xxxxx.pez.pivotal.io:8443",
+            "user": "xxxxx"
           },
           "ssh": {
-            "pass": "pivotal",
-            "url": "opsmgr.pcfaas-slot10.pez.pivotal.io:22",
+            "pass": "xxxxx",
+            "url": "opsmgr.pcfaas-xxxxx.pez.pivotal.io:22",
             "user": "ubuntu"
           }
         }
