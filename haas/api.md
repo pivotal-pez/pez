@@ -8,16 +8,6 @@ Innkeeper text here
 
 ## `/v2/Provision`
 
-Provision an environment
-
-### Example Response
-
-```xml
-<update code="200" inboxnew="" message="success" time="2015-01-15T17:35:48Z"/>
-```
-
-## `/v1/posts/add?`
-
 Add a new post to Delicious.
 
 ### Arguments
@@ -36,7 +26,7 @@ Add a new post to Delicious.
 
 ### Example Response
 
-If the post was successful:
+If the call was successful:
 
 ```json
 {
@@ -54,8 +44,8 @@ If the post was successful:
 }
 ```
 
-If the post failed:
+If the call failed:
 
-```xml
-<result code="something went wrong" />
+```json
+tbd
 ```
