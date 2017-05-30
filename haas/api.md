@@ -1,7 +1,10 @@
 # Innkeeper
 
-Innkeeper text here
+All API calls require:
+- `Content-Type` - {"Content-Type":"application/json"}
+- `Authorization` - Basic Authentication
 
+Available Endpoints:
 * [`/v2/Provision`] — Provision an environment
 
 ---
