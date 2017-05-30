@@ -85,6 +85,20 @@ none
 - `salesforce` (required) — No longer used, but required
 - `contact` (required) — No longer used, but required
 
+```json
+{
+	"sku": "sc2.vs.standard",
+	"tenantid": "pcfaas",
+	"zone": "external",
+	"geo_loc": "SC2",
+	"origin": "",
+	"buName": "",
+	"qualification": "",
+	"duration": "",
+	"salesforce": "",
+	"contact": ""
+}
+```
 
 ### Example Response
 
@@ -95,9 +109,9 @@ If the call was successful:
   "status": "success",
   "data": [
     {
-      "tenantid": "jgray-test-RP8RMG",
+      "tenantid": "pcfaas-RP8RMG",
       "sku": "sc2.vs.standard",
-      "zone": "internal",
+      "zone": "external",
       "geo_loc": "SC2",
       "descr": "<b>this is a test.</b> Here is some data<br><br>Here is some more <b>data.</b>"
     }
