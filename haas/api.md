@@ -1,16 +1,14 @@
-# Posts
+# Innkeeper
 
-Posts are the atomic building blocks of Delicious. Typically, a Post contains a link and several meta data.
+Innkeeper text here
 
-* [`/v1/posts/update`](#v1postsupdate) — Check to see when a user last posted an item.
+* [`/v2/Provision`] — Provision an environment
 
 ---
 
-## `/v1/posts/update`
+## `/v2/Provision`
 
-Check to see when a user last posted an item. Returns the last updated time for the user, as well as the number of new items in the user’s inbox since it was last visited.
-
-Use this before calling posts/all to see if the data has changed since the last fetch.
+Provision an environment
 
 ### Example Response
 
@@ -24,20 +22,36 @@ Add a new post to Delicious.
 
 ### Arguments
 
-- `&url={URL}` (required) — The url of the item.
-- `&description={...}` (required) — The description of the item.
-- `&extended={...}` (optional) — Notes for the item.
-- `&tags={...}` (optional) — Tags for the item (comma delimited).
-- `&dt={CCYY-MM-DDThh:mm:ssZ}` (optional) — Datestamp of the item (format “CCYY-MM-DDThh:mm:ssZ”). Requires a LITERAL “T” and “Z” like in ISO8601 at http://www.cl.cam.ac.uk/~mgk25/iso-time.html for Example: `1984-09-01T14:21:31Z`.
-- `&replace=no` (optional) — Don’t replace post if given url has already been posted.
-- `&shared=no` (optional) — Make the item private.
+- `sku` (required) — The catalog item that is being requested
+- `tenantid` (required) — Prefix for what the resulting environment will be called 
+- `zone` (required) — Network location for the environment (internal or external)
+- `geo_loc` (required) — Geographic location of the environment (PAO, SC2, ORK..)
+- `origin` (required) — No longer used, but required
+- `buName` (required) — No longer used, but required
+- `qualification` (required) — No longer used, but required
+- `duration` (required) — No longer used, but required
+- `salesforce` (required) — No longer used, but required
+- `contact` (required) — No longer used, but required
+
 
 ### Example Response
 
 If the post was successful:
 
-```xml
-<result code="done" />
+```json
+{
+  "status": "success",
+  "data": [
+    {
+      "tenantid": "jgray-test-RP8RMG",
+      "sku": "sc2.vs.standard",
+      "zone": "internal",
+      "geo_loc": "SC2",
+      "descr": "<b>this is a test.</b> Here is some data<br><br>Here is some more <b>data.</b>"
+    }
+  ],
+  "message": "ok"
+}
 ```
 
 If the post failed:
