@@ -1,17 +1,52 @@
 # Innkeeper
 
-All API calls require:
-- `Content-Type` - {"Content-Type":"application/json"}
+All API calls require headers:
+- `Content-Type` - application/json
 - `Authorization` - Basic Authentication
 
 Available Endpoints:
-* [`/v2/Provision`] — Provision an environment
+* [`/v2/GetProductSkus/{GEO_LOC}`] `GET` Provision an environment
+* [`/v2/Provision`] `POST` Provision an environment
 
 ---
 
+## `/v2/GetProductSkus/{GEO_LOC}`
+
+Ask for all catalog items available in a specific datacenter.
+
+`GET`
+
+### Arguments
+
+none
+
+
+### Example Response
+
+If the call was successful:
+
+```json
+{
+  "status": "success",
+  "data": [
+    {
+      "tenantid": "jgray-test-RP8RMG",
+      "sku": "sc2.vs.standard",
+      "zone": "internal",
+      "geo_loc": "SC2",
+      "descr": "<b>this is a test.</b> Here is some data<br><br>Here is some more <b>data.</b>"
+    }
+  ],
+  "message": "ok"
+}
+```
+
+
 ## `/v2/Provision`
 
-Add a new post to Delicious.
+Request an environment to be provisioned.
+
+`POST`
 
 ### Arguments
 
