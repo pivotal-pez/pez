@@ -14,9 +14,7 @@ Available Endpoints:
 
 ## `/v2/GetCapacity/{GEO_LOC}/{SKU}`
 
-Ask for available capacity for a specific sku in a specific location.
-
-`GET`
+`GET` Ask for available capacity for a specific sku in a specific location.
 
 ### Inline Arguments
 - `sku` (required) — The catalog item that is being requested
@@ -33,19 +31,15 @@ If the call was successful:
 
 ```json
 {
-  "sc2.linux.centos72.standard": {
-    "Description": "",
-    "Type": "linux"
-  },
-  ...
+  "sku": "sc2.linux.centos72.standard",
+  "geo_loc": "SC2",
+  "available": "0"
 }
 ```
 
 ## `/v2/GetProductSkus/{GEO_LOC}`
 
-Ask for all catalog items available in a specific datacenter.
-
-`GET`
+`GET` Ask for all catalog items available in a specific datacenter.
 
 ### Inline Arguments
 - `geo_loc` (required) — Geographic location of the environment (PAO, SC2, ORK..)
@@ -72,9 +66,7 @@ If the call was successful:
 
 ## `/v2/Provision`
 
-Request an environment to be provisioned.
-
-`POST`
+`POST` Request an environment to be provisioned.
 
 ### Inline Arguments
 
